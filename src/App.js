@@ -7,8 +7,8 @@ import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Education from './components/Education';
-import ContactPage from './components/Contact'; // Import the Contact component
-import Footer from './components/Footer'; // Import the Footer component
+// import ContactPage from './components/Contact'; // Import the Contact component
+// import Footer from './components/Footer'; // Import the Footer component
 
 import { motion, useAnimation } from 'framer-motion';
 import AOS from 'aos';
@@ -42,9 +42,9 @@ function Home() {
       </section>
       
       {/* Add Contact section to the home page */}
-      <section id="contact" className="py-20 bg-gray-900/50">
+      {/* <section id="contact" className="py-20 bg-gray-900/50">
         <ContactPage />
-      </section>
+      </section> */}
     </main>
   );
 }
@@ -71,10 +71,10 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/education" element={<Education />} />
           {/* Add Contact route */}
-          <Route path="/contact" element={<ContactPage />} />
+          {/* <Route path="/contact" element={<ContactPage />} /> */}
         </Routes>
         {/* Add Footer component */}
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   );
